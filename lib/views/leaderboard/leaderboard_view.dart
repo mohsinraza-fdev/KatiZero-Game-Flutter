@@ -18,7 +18,11 @@ class LeaderboardView extends StatelessWidget {
               body: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25),
                 child: Column(
-                  children: [ScreenHeader(), ItemList()],
+                  children: [
+                    ScreenHeader(),
+                    SizedBox(height: 56),
+                    ItemList(),
+                  ],
                 ),
               ),
             ));
@@ -34,6 +38,7 @@ class ItemList extends ViewModelWidget<LeaderboardViewModel> {
   Widget build(BuildContext context, LeaderboardViewModel viewModel) {
     return Expanded(
         child: ListView.builder(
+      padding: EdgeInsets.only(top: 9),
       itemCount: viewModel.leaderboardItems.length,
       itemBuilder: (BuildContext context, int index) => Container(
         alignment: Alignment.center,
