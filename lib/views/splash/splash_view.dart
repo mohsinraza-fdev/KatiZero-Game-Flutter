@@ -61,7 +61,7 @@ class SplashView extends StatelessWidget {
                           ),
                           SizedBox(height: 3),
                           Text(
-                            'ACE DEV',
+                            'TECH IDARA',
                             style: GoogleFonts.poppins(
                               fontSize: 25,
                               fontWeight: FontWeight.w600,
