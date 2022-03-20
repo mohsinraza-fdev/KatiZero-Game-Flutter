@@ -1,16 +1,6 @@
-# kati_zero
+# Kati Zero
 
-A new Flutter project.
+A Tic Tac Toe Game built in Flutter.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## ScreenShots:
+<img src="https://user-images.githubusercontent.com/95017090/159130203-4c925904-79e9-4ec5-ab22-6aaad0e0d9a8.png" width="200">   <img src="https://user-images.githubusercontent.com/95017090/159130407-a257cb6e-8ed9-4c9b-80e2-a26006c50781.png" width="200">   <img src="https://user-images.githubusercontent.com/95017090/159130414-a734f8b8-6d60-445b-a8f2-a34409d4a2f0.png" width="200">   <img src="https://user-images.githubusercontent.com/95017090/159130424-44255fc4-abb1-4234-a445-06a55c8cc4e6.png" width="200">
