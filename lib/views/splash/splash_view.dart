@@ -95,7 +95,7 @@ class AppTitle extends StatelessWidget {
                 letterSpacing: 6.5,
                 color: Colors.white,
                 fontWeight: FontWeight.w500,
-                fontSize: 40),
+                fontSize: 35),
           ),
         )
       ],
