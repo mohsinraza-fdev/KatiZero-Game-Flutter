@@ -10,6 +10,6 @@ class SplashViewModel extends BaseViewModel {
 
   switchScreen() {
     Future.delayed(Duration(seconds: 3),
-        () => _navigator.clearStackAndShow(Routes.homeView));
+        () => _navigator.clearStackAndShow(Routes.modeSelectionView));
   }
 }

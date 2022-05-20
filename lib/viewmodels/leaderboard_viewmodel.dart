@@ -9,6 +9,7 @@ class LeaderboardViewModel extends BaseViewModel {
   final _navigator = locator<NavigationService>();
 
   List<Player?> get leaderboardItems => _boardService.leaderBoard;
+  bool get botEnabled => _boardService.botMode;
 
   void back() {
     _navigator.back();

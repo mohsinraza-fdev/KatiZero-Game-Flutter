@@ -39,7 +39,9 @@ class ItemList extends ViewModelWidget<LeaderboardViewModel> {
               Text(
                 viewModel.leaderboardItems[index]!.id == Players.one
                     ? 'Player 1'
-                    : 'Player 2',
+                    : viewModel.botEnabled
+                        ? 'AI Bot'
+                        : 'Player 2',
                 style: GoogleFonts.poppins(
                   fontSize: 20,
                   fontWeight: FontWeight.w600,
@@ -68,4 +70,3 @@ class ItemList extends ViewModelWidget<LeaderboardViewModel> {
     ));
   }
 }
-

@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:kati_zero/viewmodels/home_viewmodel.dart';
+import 'package:kati_zero/views/home/home_view.dart';
+import 'package:stacked/stacked.dart';
 
 import '../../shared/styles.dart';
 
-class VersusTitle extends StatelessWidget {
+class VersusTitle extends ViewModelWidget<HomeViewModel> {
   const VersusTitle({
     Key? key,
   }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, HomeViewModel viewModel) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 65),
       child: Row(
@@ -51,7 +54,7 @@ class VersusTitle extends StatelessWidget {
               SvgPicture.asset('images/crossx.svg'),
               SizedBox(height: 11),
               Text(
-                'Player 2',
+                viewModel.botEnabled ? 'AI Bot' : 'Player 2',
                 style: GoogleFonts.poppins(
                     fontSize: 25,
                     letterSpacing: 0.25,

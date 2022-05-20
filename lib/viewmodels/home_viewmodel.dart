@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:flutter/animation.dart';
+import "dart:math";
 import 'package:kati_zero/app/app.router.dart';
 import 'package:kati_zero/app/locator.dart';
 import 'package:kati_zero/services/board_service.dart';
@@ -14,6 +14,7 @@ class HomeViewModel extends BaseViewModel {
   final _navigator = locator<NavigationService>();
 
   List<Player> get players => _boardService.players;
+  bool get botEnabled => _boardService.botMode;
 
   Players turn = Players.one;
   Winner? winner;
@@ -45,6 +46,21 @@ class HomeViewModel extends BaseViewModel {
     } else {
       turn = Players.one;
     }
+  }
+
+  int getBotMarkIndex() {
+    List<Marks> board = [...gameBoard[0], ...gameBoard[1], ...gameBoard[2]];
+    List<int> emptyIndexes = <int>[];
+    int index = 0;
+    board.forEach((item) {
+      if (item == Marks.none) {
+        emptyIndexes.add(index);
+      }
+      index++;
+    });
+    final random = Random();
+    int i = random.nextInt(emptyIndexes.length);
+    return emptyIndexes[i];
   }
 
   void dropMark(int index) {

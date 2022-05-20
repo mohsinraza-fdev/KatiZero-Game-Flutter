@@ -20,6 +20,12 @@ enum CombinationType {
   bottomHorizontal,
 }
 
+enum Difficulty {
+  easy,
+  medium,
+  hard,
+}
+
 class Player {
   Players id;
   Marks mark;

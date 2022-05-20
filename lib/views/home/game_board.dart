@@ -40,6 +40,9 @@ class GameBoard extends ViewModelWidget<HomeViewModel> {
                     onTap: () {
                       if (viewModel.winner == null) {
                         viewModel.dropMark(index);
+                        if (viewModel.botEnabled) {
+                          viewModel.dropMark(viewModel.getBotMarkIndex());
+                        }
                       }
                     },
                     child: Container(
@@ -88,7 +91,9 @@ class GameBoard extends ViewModelWidget<HomeViewModel> {
                             ? 'It\'s a'
                             : viewModel.winner!.player.id == Players.one
                                 ? 'Player 1'
-                                : 'Player 2',
+                                : viewModel.botEnabled
+                                    ? 'AI Bot'
+                                    : 'Player 2',
                         style: GoogleFonts.poppins(
                             color: Colors.white,
                             fontSize: 20,
