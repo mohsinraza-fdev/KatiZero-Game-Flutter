@@ -61,7 +61,7 @@ class SplashView extends StatelessWidget {
                           ),
                           SizedBox(height: 3),
                           Text(
-                            'TECH IDARA',
+                            'ANONYMOUS',
                             style: GoogleFonts.poppins(
                               fontSize: 25,
                               fontWeight: FontWeight.w600,
@@ -90,7 +90,7 @@ class AppTitle extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(top: 62),
           child: Text(
-            'KATI ZERO',
+            'TIC TAC TOE',
             style: GoogleFonts.poppins(
                 letterSpacing: 10.5,
                 color: Colors.white,
