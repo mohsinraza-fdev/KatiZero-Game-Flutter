@@ -92,10 +92,10 @@ class AppTitle extends StatelessWidget {
           child: Text(
             'TIC TAC TOE',
             style: GoogleFonts.poppins(
-                letterSpacing: 10.5,
+                letterSpacing: 6.5,
                 color: Colors.white,
-                fontWeight: FontWeight.w400,
-                fontSize: 35),
+                fontWeight: FontWeight.w500,
+                fontSize: 40),
           ),
         )
       ],
